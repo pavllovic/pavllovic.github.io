@@ -1,0 +1,6 @@
+:root {
+  /* static spaces */
+  --fixed-space-sm: 10px;
+  --fixed-space-md: 20px;
+  --fixed-space-lg: 40px;
+}

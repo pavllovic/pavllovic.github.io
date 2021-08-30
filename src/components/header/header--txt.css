@@ -1,0 +1,20 @@
+.header--txt {
+  padding: var(--fixed-space-md) var(--fixed-space-sm);
+  background: var(--gradient-1);
+  border-radius: 15px;
+  box-shadow: var(--shadow-1);
+  color: #fff;
+  font-size: 2.4rem;
+  letter-spacing: 0.4rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 30em) {
+  .header--txt {
+    padding: var(--fixed-space-lg);
+    font-size: 3.2rem;
+    letter-spacing: 0.6rem;
+  }
+}

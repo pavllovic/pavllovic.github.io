@@ -1,0 +1,43 @@
+.example--tablist {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: calc(var(--fixed-space-sm) + 50px);
+  padding-left: var(--fixed-space-sm);
+  background-color: var(--bg-color);
+  transition-delay: 0s, 0s;
+  transition-duration: 0.3s, 0s;
+  transition-property: transform, visibility;
+}
+
+.example--tablist-btn[aria-expanded='false'] ~ .example--tablist {
+  transform: translateX(-100%);
+  transition-delay: 0s, 0.3s;
+  visibility: hidden;
+}
+
+.example--tablist-btn[aria-expanded='true'] ~ .example--tablist {
+  transform: translateX(0%);
+  visibility: visible;
+}
+
+@media (min-width: 30em) {
+  .example--tablist {
+    position: static;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: var(--fixed-space-sm);
+  }
+
+  .example--tablist-btn[aria-expanded='false'] ~ .example--tablist {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+}

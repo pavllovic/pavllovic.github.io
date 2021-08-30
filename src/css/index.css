@@ -1,0 +1,17 @@
+@import './utility/reset.css';
+@import './global/color.css';
+@import './global/typography.css';
+@import './global/spacing.css';
+@import './utility/visually-hidden.css';
+@import './utility/focus-visible.css';
+@import '../components/header/header.css';
+@import '../components/example/example.css';
+@import '../components/card-site/card-site.css';
+
+body {
+  min-width: 21rem;
+  background-color: var(--bg-color);
+  color: var(--color-text);
+  letter-spacing: 0;
+  text-align: center;
+}

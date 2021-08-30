@@ -1,0 +1,17 @@
+.card-site--name {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.card-site--name::after {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: var(--fixed-space-sm);
+  margin-bottom: var(--fixed-space-sm);
+  background-color: var(--border-color);
+  content: '';
+}

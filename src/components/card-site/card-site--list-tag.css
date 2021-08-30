@@ -1,0 +1,7 @@
+.card-site--list-tag {
+  position: relative;
+  width: 100%;
+  padding: var(--fixed-space-md) var(--fixed-space-md);
+  box-shadow: var(--shadow-5);
+  text-align: left;
+}

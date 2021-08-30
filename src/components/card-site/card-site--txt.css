@@ -1,0 +1,6 @@
+.card-site--txt {
+  position: relative;
+  padding: var(--fixed-space-md);
+  background-color: #fff;
+  box-shadow: var(--shadow-3);
+}

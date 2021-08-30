@@ -1,0 +1,11 @@
+@import './card-site--img.css';
+@import './card-site--txt.css';
+@import './card-site--link.css';
+@import './card-site--list-link.css';
+@import './card-site--list-tag.css';
+@import './card-site--tag.css';
+@import './card-site--name.css';
+
+.card-site {
+  position: relative;
+}

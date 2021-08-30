@@ -1,0 +1,13 @@
+doctype html
+html
+  head(lang='ru')
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1' name='viewport')
+    meta(name="referrer" content="strict-origin-when-cross-origin")
+    title #{htmlWebpackPlugin.options.title}
+    link(rel='icon' href=require('Images/favicon/favicon.ico').default  sizes='any')
+    link(rel='icon' href=require('Images/favicon/icon.svg').default type='image/svg+xml')
+    link(rel='apple-touch-icon' href=require('Images/favicon/apple-touch-icon.png').default)
+    block preload
+  body
+    block content
