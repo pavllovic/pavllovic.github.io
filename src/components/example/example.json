@@ -5,8 +5,8 @@
     "name": "coinbase",
     "tags": ["html", "pug", "css", "js", "webpack"],
     "link": {
-      "site": "link",
-      "code": "link",
+      "site": "https://pavllovic.github.io/example_2",
+      "code": "https://github.com/pavllovic/example_2",
       "figma": "link"
     }
   },
@@ -16,8 +16,8 @@
     "name": "figmaland",
     "tags": ["html", "pug", "css", "js", "webpack"],
     "link": {
-      "site": "link",
-      "code": "link",
+      "site": "https://pavllovic.github.io/example_1",
+      "code": "https://github.com/pavllovic/example_1",
       "figma": "link"
     }
   }
