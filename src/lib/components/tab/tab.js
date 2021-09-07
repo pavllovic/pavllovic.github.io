@@ -74,6 +74,9 @@ const tabMethod = {
         return this.focusEnd();
       case 'Space':
         return this.showPanel(e.target);
+      case 'Tab':
+        this.focusedTab = this.selectedTab;
+        break;
       default:
         break;
     }
