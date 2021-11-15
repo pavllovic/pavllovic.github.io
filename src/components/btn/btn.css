@@ -1,0 +1,22 @@
+@import './btn--txt.css';
+@import './btn--icon.css';
+
+.btn {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn_revers {
+  flex-direction: row-reverse;
+}

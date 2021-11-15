@@ -1,0 +1,7 @@
+mixin count(list)
+  div(class='count')
+    div(class='count--list')
+      each item, index in list
+        - const x = index + 1;
+        div(class='count--item') #{x < 10 ? `0${x}` : x}
+    div(class='count--length') #{list.length < 10 ? `0${list.length}` : list.length}

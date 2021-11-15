@@ -1,0 +1,58 @@
+.carousel--tablist {
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scrollbar-color: currentColor transparent;
+  scrollbar-width: thin;
+  transform: translateX(100%);
+  transition-delay: 0s, 1s;
+  transition-duration: 1s, 0s;
+  transition-property: transform, visibility;
+  transition-timing-function: ease;
+  visibility: hidden;
+}
+
+.carousel--tablist::-webkit-scrollbar {
+  height: 3px;
+  -webkit-appearance: none;
+}
+
+.carousel--tablist::-webkit-scrollbar-track {
+  margin: 0 1rem;
+  background-color: transparent;
+}
+
+.carousel--tablist::-webkit-scrollbar-thumb {
+  background-color: currentColor;
+}
+
+@media (min-width: 800px), (orientation: landscape) {
+  .carousel--tablist {
+    position: absolute;
+    right: 2rem;
+    width: auto;
+    max-height: calc(100vh - 17rem);
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    overflow-y: auto;
+  }
+
+  .carousel--tablist::-webkit-scrollbar {
+    width: 3px;
+    -webkit-appearance: none;
+  }
+
+  .carousel--tablist::-webkit-scrollbar-track {
+    margin: 1rem 0;
+    background-color: transparent;
+  }
+}
+
+.carousel.is-active .carousel--tablist {
+  transform: translateX(0);
+  transition-delay: 0s, 0s;
+  visibility: visible;
+}

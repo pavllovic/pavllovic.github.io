@@ -1,0 +1,148 @@
+.project--controls {
+  position: absolute;
+  z-index: 3;
+  right: 2rem;
+  display: flex;
+  height: 100%;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+/* @media (min-width: 52.5em) {
+  .project--controls {
+    right: calc((100% - 800px) / 2);
+  }
+} */
+
+/* @media (min-width: 1110px) { */
+@media (min-width: 1120px) {
+  .project--controls {
+    right: calc((100% - 1100px) / 2);
+  }
+}
+
+
+/* -- btn -- */
+.project--controls .btn {
+  position: absolute;
+  transition-property: visibility;
+  visibility: hidden;
+}
+
+/* @media (min-width: 1120px) {
+  .btn {
+    transform: translateX(calc(100%));
+  }
+} */
+
+.project--controls .btn-carousel_hide {
+  top: 3rem;
+}
+
+.project--controls .btn-carousel_show,
+.project--controls [data-carousel='link'] {
+  bottom: 3rem;
+}
+
+.project .btn[aria-pressed='false'],
+.project.is-active .btn[aria-pressed='true'],
+.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] {
+  transition-delay: 0.5s;
+}
+
+.project.is-active .btn[aria-pressed='true'],
+.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] {
+  visibility: hidden;
+}
+
+.project.is-active .btn[aria-pressed='false'],
+.project.is-active .btn[aria-pressed='true'] + .btn[data-carousel='link'] {
+  visibility: visible;
+}
+
+/* -- end btn -- */
+
+/* btn--txt */
+.project--controls .btn--txt {
+  transition-duration: 0.5s, 0.5s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease, ease;
+}
+
+.project .btn-carousel_show[aria-pressed='false'] .btn--txt,
+.project.is-active .btn-carousel_show[aria-pressed='true'] .btn--txt {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.project.is-active .btn-carousel_hide[aria-pressed='true'] .btn--txt {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.project.is-active .btn[aria-pressed='false'] .btn--txt {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] .btn--txt {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.project.is-active .btn[aria-pressed='true'] + .btn[data-carousel='link'] .btn--txt {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+/* end btn--txt */
+
+/* btn--txt underline */
+.project--controls .btn--txt::before {
+  transition-duration: 0.5s, 0.5s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease, ease;
+}
+
+.project .btn-carousel_show[aria-pressed='false'] .btn--txt::before,
+.project.is-active .btn[aria-pressed='true'] .btn--txt::before {
+  transform: scaleX(0);
+}
+
+.project.is-active .btn[aria-pressed='false'] .btn--txt::before {
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] .btn--txt::before {
+  transform: scaleX(0);
+}
+
+.project.is-active .btn[aria-pressed='true'] + .btn[data-carousel='link'] .btn--txt::before {
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+/* end btn--txt underline */
+
+/* btn--icon */
+.project--controls .btn--icon {
+  transition-duration: 0.5s, 0.5s;
+  transition-property: transform, opacity;
+  transition-timing-function: ease, ease;
+}
+
+.project .btn .btn--icon {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+
+.project.is-active .btn[aria-pressed='false'] .btn--icon {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.5s;
+}
+
+/* end btn--icon */

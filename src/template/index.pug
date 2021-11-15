@@ -2,6 +2,27 @@ extends ./layout/base.pug
 
 block preload
 
+block styles
+  style.
+    @font-face {
+      font-family: 'TTLakes';
+      font-weight: 400;
+      font-display: swap;
+      src:
+        url(#{require('Fonts/TTLakes-400.woff2').default}) format('woff2'),
+        url(#{require('Fonts/TTLakes-400.woff').default}) format('woff');
+    }
+    @font-face {
+      font-family: 'TTLakes';
+      font-weight: 700;
+      font-display: swap;
+      src:
+        url(#{require('Fonts/TTLakes-700.woff2').default}) format('woff2'),
+        url(#{require('Fonts/TTLakes-700.woff').default}) format('woff');
+    } 
+
 block content 
-  include ../components/header/header.pug
-  include ../components/example/example.pug
+  include ../components/logo/logo.pug
+  include ../components/contacts/contacts.pug
+  //- include ../components/example/example.pug
+  include ../components/tabs/tabs.pug

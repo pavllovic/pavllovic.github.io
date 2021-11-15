@@ -1,4 +1,16 @@
-import { exampleTabs, tablist } from './components/example/index.js';
+// import { exampleTabs, tablist } from './components/example/index.js';
+import Tabs from 'Components/tabs/tabs.js';
+import CarouselTab from 'Components/carousel/carousel-tab.js';
 
-exampleTabs.init();
-tablist.init();
+const tabs = document.querySelector('#tabs-poject');
+const arrCarousel = document.querySelectorAll('.carousel');
+
+const tabsPoject = new Tabs(tabs);
+
+tabsPoject.init();
+arrCarousel.forEach((item) => {
+  new CarouselTab(item).init();
+});
+
+// exampleTabs.init();
+// tablist.init();

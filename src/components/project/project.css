@@ -1,0 +1,9 @@
+@import './project--controls.css';
+@import './project--heading.css';
+@import './project--name.css';
+
+.project {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}

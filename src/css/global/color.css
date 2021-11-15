@@ -7,7 +7,8 @@
   --color-text-light: #fff;
 
   /* background color */
-  --bg-color: hsl(240, 100%, 99%);
+
+  /* --bg-color: hsl(240, 100%, 99%); */
   --gradient-1: linear-gradient(to right, var(--color-main) 0%, var(--color-second) 99%);
 
   /* shadows */
@@ -19,4 +20,5 @@
 
   /* border color */
   --border-color: hsl(240, 21%, 94%);
+  --txt-color: #ff71cb;
 }

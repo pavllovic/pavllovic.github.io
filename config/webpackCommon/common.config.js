@@ -8,7 +8,9 @@ const commonConfig = {
     alias: {
       Components: path.resolve(__dirname, '../../src/components/'),
       Images: path.resolve(__dirname, '../../src/images/'),
-      Lib: path.resolve(__dirname, '../../src/lib/')
+      Lib: path.resolve(__dirname, '../../src/lib/'),
+      Fonts: path.resolve(__dirname, '../../src/fonts/'),
+      BD: path.resolve(__dirname, '../../src/bd/')
     }
   }
 }

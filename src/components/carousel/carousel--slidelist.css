@@ -1,0 +1,41 @@
+.carousel--slidelist {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-top: 57.3%;
+  transform: translateX(100%);
+  transition-delay: 0s, 1s;
+  transition-duration: 1s, 0s;
+  transition-property: transform, visibility;
+  transition-timing-function: ease;
+  visibility: hidden;
+}
+
+.carousel.is-active .carousel--slidelist {
+  transform: translateX(0);
+  transition-delay: 0s, 0s;
+  visibility: visible;
+}
+
+@media (min-width: 800px), (orientation: landscape) {
+  .carousel--slidelist {
+    width: calc(100% - 100px - 5rem);
+    max-width: 800px;
+    height: 100%;
+    align-self: flex-end;
+    margin-right: calc(100px + 4rem);
+    margin-left: 1rem;
+    transform: translateY(100%);
+  }
+
+  .carousel.is-active .carousel--slidelist {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1080px) {
+  .carousel--slidelist {
+    align-self: center;
+    margin: 0;
+  }
+}

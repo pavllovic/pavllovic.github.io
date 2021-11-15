@@ -1,0 +1,3 @@
+.contacts--item {
+  color: var(--txt-color, currentColor);
+}

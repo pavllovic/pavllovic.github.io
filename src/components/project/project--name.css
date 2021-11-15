@@ -1,0 +1,51 @@
+.project--name {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+  color: inherit;
+  filter: drop-shadow(2px 4px 6px currentColor);
+
+  /* font-size: 40vh; */
+  font-size: calc(50vh - 6.5rem);
+  font-weight: bold;
+  line-height: 1;
+  pointer-events: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px currentColor;
+  text-transform: uppercase;
+  transform: translateX(calc(-50vw + 50%));
+}
+
+.project--name p {
+  display: flex;
+  overflow: hidden;
+}
+
+.project--name p span {
+  transition-duration: 0.5s, 0.5s;
+  transition-property: opacity, transform;
+  transition-timing-function: ease, ease;
+}
+
+.carousel + .project--name p:first-child span {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.carousel + .project--name p:last-child span {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.carousel.is-active + .project--name p:first-child span,
+.carousel.is-active + .project--name p:last-child span {
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 1s, 1s;
+}

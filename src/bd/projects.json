@@ -1,0 +1,35 @@
+[
+  {
+    "bg": "#e9f1f4",
+    "color": "#ff71cb",
+    "name": "loft mebel",
+    "stack": ["html", "css", "js", "pug", "webpack"],
+    "image": {
+      "name": "lm",
+      "slides": [1,2,3,4,5,6,7]
+    },
+    "href": "#"
+  },
+  {
+    "bg": "#222223",
+    "color": "#e9786a",
+    "name": "coin base",
+    "stack": ["html", "css", "js", "pug", "webpack"],
+    "image": {
+      "name": "cb",
+      "slides": [1,2,3,4,5,6,7,8,9]
+    },
+    "href": "#"
+  },
+  {
+    "bg": "#e0e7ef",
+    "color": "#ae75e6",
+    "name": "figma land",
+    "stack": ["html", "css", "js", "pug", "webpack"],
+    "image": {
+      "name": "lp",
+      "slides": [1,2,3,4]
+    },
+    "href": "#"
+  }
+]

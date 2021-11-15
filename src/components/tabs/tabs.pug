@@ -1,0 +1,40 @@
+include ../carousel/carousel.pug
+include ../count/count.pug
+
+section(class='tabs' id='tabs-poject' 
+        aria-label='таб-панель проектов' aria-roledescription='carousel')
+  - var projects = require('BD/projects.json');  
+  div(class='tabs--tablist' id='tabs-poject--tablist' role='tablist' aria-label='табы выбора проектов')
+    each item, index in projects
+      - const x = index + 1;
+      button(class=`tabs--tab ${x === 1 ? 'is-focus' : ''}` type='button' role='tab' aria-selected='false' aria-controls=`panel-${x}` aria-label=`таб ${x}` 
+        tabindex=`${x === 1 ? '0' : '-1'}` data-tab=`${x}` data-bg=`${item.bg}` data-color=`${item.color}`)
+        picture 
+          source(srcset=`${require(`Images/hero/${item.image.name}-800w.webp`).default} 800w,
+                       ${require(`Images/hero/${item.image.name}-1600w.webp`).default} 1600w`
+              sizes='800px'
+              type='image/webp')
+          source(srcset=`${require(`Images/hero/${item.image.name}-800w.jpg`).default} 800w,
+                       ${require(`Images/hero/${item.image.name}-1600w.jpg`).default} 1600w`
+              sizes='800px'
+              type='image/jpg')
+          img(src=require(`Images/hero/${item.image.name}-800w.jpg`).default alt=`сайт ${item.name}` width='800' height='467')  
+  div(class='tabs--panellist' id='tabs-poject--panellist' data-tabs='panellist')
+    each item, index in projects
+      - const x = index + 1;
+      div(class=`tabs--panel project ${x === 1 ? 'is-active' : ''}` role='tabpanel' data-tabs='panel' id=`panel-${x}` aria-label=`${item.name}` style=`--bg-color:${item.bg}`)
+        h2(class='project--heading')
+          - var arr = item.name.split(' ');
+            each string in arr 
+              p
+                each char in string
+                  span #{char}
+        +carousel(item.image.slides, item.image.name, item.href) 
+        div(class='project--name' aria-hidden='true')
+          - var arr = item.name.split(' ');
+            each string in arr 
+              p
+                each char in string
+                  span #{char}
+  div(class='tabs--count' aria-hidden='true')
+    +count(projects)

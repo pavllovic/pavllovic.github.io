@@ -1,0 +1,39 @@
+mixin carousel(slides, id, href)
+  div(class='carousel' id=`carousel-${id}` aria-label='слайды проекта' aria-roledescription='carousel')
+    div(class='project--controls')
+      button(class='btn btn_revers btn-carousel_hide' type='button' aria-pressed='true' data-carousel='btn') 
+        span(class='btn--txt') проджектс
+        span(class='btn--icon' aria-hidden='true')
+          include ../btn/icon/arrow.svg
+          include ../btn/icon/arrow.svg
+      button(class='btn btn-carousel_show' type='button' aria-pressed='false' data-carousel='btn') 
+        span(class='btn--txt') дитэйлс
+        span(class='btn--icon' aria-hidden='true')
+          include ../btn/icon/arrow.svg
+          include ../btn/icon/arrow.svg 
+      a(class='btn btn_revers' href=`${href}` data-carousel='link') 
+        span(class='btn--txt') смотреть
+    div(class='carousel--slidelist' data-carousel='slidelist')
+      each item, index in slides
+        - const x = index + 1;
+        div(class=`carousel--slide ${x === 1 ? 'is-focus' : ''}` role='tabpanel' aria-label=`${x} слайд из ${slides.length}` id=`slide-${x}`)
+          picture
+            source(srcset=`${require(`Images/carousel/${id}/${item}-400w.webp`).default} 400w,
+                       ${require(`Images/carousel/${id}/${item}-800w.webp`).default} 800w,
+                       ${require(`Images/carousel/${id}/${item}-1600w.webp`).default} 1600w`
+              sizes='(min-width: 816px) 800px', calc(100% - 2rem)
+              type='image/webp')
+            source(srcset=`${require(`Images/carousel/${id}/${item}-400w.jpg`).default} 400w,
+                       ${require(`Images/carousel/${id}/${item}-800w.jpg`).default} 800w,
+                       ${require(`Images/carousel/${id}/${item}-1600w.jpg`).default} 1600w`
+              sizes='(min-width: 816px) 800px, calc(100% - 2rem)'
+              type='image/jpg')
+            img(src=require(`Images/carousel/${id}/${item}-800w.jpg`).default alt=`сайт` width='800' height='467')
+    div(class='carousel--tablist' data-carousel='tablist')
+      each item, index in slides
+        - const x = index + 1;
+        div(class='carousel--tab' role='tab' aria-controls=`slide-${x}` data-tab=`${x}` 
+          aria-selected=`${x === 1 ? 'true' : 'false'}` tabindex=`${x === 1 ? '0' : '-1'}`)
+          picture
+            source(src=require(`Images/carousel/${id}/${item}-400w.webp`).default type='image/webp')
+            img(src=require(`Images/carousel/${id}/${item}-400w.jpg`).default alt=`сайт` width='80' height='45')

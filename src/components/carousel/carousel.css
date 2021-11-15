@@ -1,0 +1,19 @@
+@import './carousel--slidelist.css';
+@import './carousel--tablist.css';
+@import './carousel--tab.css';
+@import './carousel--slide.css';
+
+.carousel {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.is-active {
+  z-index: 3;
+}

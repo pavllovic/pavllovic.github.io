@@ -1,0 +1,23 @@
+.tabs--count {
+  position: absolute;
+  z-index: 10;
+  top: 3rem;
+  right: 2rem;
+  overflow: hidden;
+}
+
+/* @media (min-width: 52.5em) {
+  .tabs--count {
+    right: calc((100% - 800px) / 2);
+  }
+} */
+
+/* @media (min-width: 1110px) { */
+@media (min-width: 1120px) {
+  .tabs--count {
+    /* right: calc((100% - 800px) / 2);
+    transform: translateX(calc(100% + 10px)); */
+
+    right: calc((100% - 1100px) / 2);
+  }
+}

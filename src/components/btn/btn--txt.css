@@ -1,0 +1,23 @@
+.btn--txt {
+  position: relative;
+  pointer-events: none;
+}
+
+.btn--txt::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  content: '';
+  transform-origin: left center;
+
+  /* transition-duration: 1s;
+  transition-property: transform;
+  transition-timing-function: ease; */
+}
+
+.btn_revers .btn--txt::before {
+  transform-origin: right center;
+}

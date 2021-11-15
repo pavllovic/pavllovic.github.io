@@ -1,0 +1,12 @@
+.count--list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition-duration: 1s;
+  transition-property: transform;
+  transition-timing-function: ease;
+}

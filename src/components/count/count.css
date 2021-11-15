@@ -1,0 +1,18 @@
+@import './count--list.css';
+@import './count--item.css';
+@import './count--length.css';
+
+.count {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding-left: 2ch;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px currentColor;
+  transition-duration: 1s;
+  transition-property: transform;
+  transition-timing-function: ease;
+}
