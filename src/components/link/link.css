@@ -1,9 +1,0 @@
-@import './link--txt.css';
-
-.link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-  text-decoration: none;
-}

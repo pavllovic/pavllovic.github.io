@@ -1,8 +1,3 @@
 :root {
   --font-main: 'TTLakes', sans-serif;
 }
-
-body {
-  font-family: var(--font-main);
-  font-weight: 400;
-}

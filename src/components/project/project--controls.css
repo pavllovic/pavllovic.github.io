@@ -8,13 +8,6 @@
   justify-content: flex-end;
 }
 
-/* @media (min-width: 52.5em) {
-  .project--controls {
-    right: calc((100% - 800px) / 2);
-  }
-} */
-
-/* @media (min-width: 1110px) { */
 @media (min-width: 1120px) {
   .project--controls {
     right: calc((100% - 1100px) / 2);
@@ -28,12 +21,6 @@
   transition-property: visibility;
   visibility: hidden;
 }
-
-/* @media (min-width: 1120px) {
-  .btn {
-    transform: translateX(calc(100%));
-  }
-} */
 
 .project--controls .btn-carousel_hide {
   top: 3rem;

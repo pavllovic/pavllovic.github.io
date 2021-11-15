@@ -7,18 +7,8 @@
   left: 2rem;
 }
 
-/* @media (min-width: 52.5em) {
-  .contacts {
-    left: calc((100% - 800px) / 2);
-    transform: translateX(-100%);
-  }
-} */
-
-/* @media (min-width: 1110px) { */
 @media (min-width: 1120px) {
   .contacts {
-    /* left: calc((100% - 800px) / 2);
-    transform: translateX(calc(-100% - 10px)); */
     left: calc((100% - 1100px) / 2);
   }
 }

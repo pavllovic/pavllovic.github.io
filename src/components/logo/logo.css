@@ -18,17 +18,8 @@
   transition-timing-function: ease;
 }
 
-/* @media (min-width: 52.5em) {
-  .logo {
-    left: calc((100% - 800px) / 2);
-  }
-} */
-
-/* @media (min-width: 1110px) { */
 @media (min-width: 1120px) {
   .logo {
-    /* left: calc((100% - 800px) / 2);
-    transform: translateX(calc(-100% - 10px)); */
     left: calc((100% - 1100px) / 2);
   }
 }
