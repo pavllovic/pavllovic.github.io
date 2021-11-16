@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: flex-start;
   background-color: hsl(0, 0%, 8%);
-  color: var(--txt-color);
+
+  /* color: var(--txt-color); */
   overflow-x: hidden;
 }
