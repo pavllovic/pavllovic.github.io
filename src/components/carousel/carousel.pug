@@ -28,7 +28,7 @@ mixin carousel(slides, id, href)
                        ${require(`Images/carousel/${id}/${item}-1600w.jpg`).default} 1600w`
               sizes='(min-width: 816px) 800px, calc(100% - 2rem)'
               type='image/jpg')
-            img(src=require(`Images/carousel/${id}/${item}-800w.jpg`).default alt=`сайт` width='800' height='467')
+            img(src=require(`Images/carousel/${id}/${item}-800w.jpg`).default alt=`сайт` width='800' height='467' loading='lazy')
     div(class='carousel--tablist' data-carousel='tablist')
       each item, index in slides
         - const x = index + 1;
@@ -36,4 +36,5 @@ mixin carousel(slides, id, href)
           aria-selected=`${x === 1 ? 'true' : 'false'}` tabindex=`${x === 1 ? '0' : '-1'}`)
           picture
             source(src=require(`Images/carousel/${id}/${item}-400w.webp`).default type='image/webp')
-            img(src=require(`Images/carousel/${id}/${item}-400w.jpg`).default alt=`сайт` width='80' height='45')
+            img(src=require(`Images/carousel/${id}/${item}-400w.jpg`).default alt=`сайт` width='80' height='45' loading='lazy'
+            )

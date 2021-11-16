@@ -35,6 +35,7 @@
 }
 
 .carousel--tab img {
+  background-color: currentColor;
   object-fit: cover;
 }
 
