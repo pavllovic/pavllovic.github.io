@@ -1,4 +1,3 @@
-// import { exampleTabs, tablist } from './components/example/index.js';
 import Tabs from 'Components/tabs/tabs.js';
 import CarouselTab from 'Components/carousel/carousel-tab.js';
 
@@ -11,6 +10,3 @@ tabsPoject.init();
 arrCarousel.forEach((item) => {
   new CarouselTab(item).init();
 });
-
-// exampleTabs.init();
-// tablist.init();
