@@ -23,6 +23,7 @@
     max-width: 800px;
     height: 100%;
     align-self: flex-end;
+    padding-top: 0;
     margin-right: calc(100px + 4rem);
     margin-left: 1rem;
     transform: translateY(100%);

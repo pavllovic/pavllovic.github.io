@@ -8,7 +8,7 @@
       "name": "lm",
       "slides": [1,2,3,4,5,6,7]
     },
-    "href": "#"
+    "href": "https://pavllovic.github.io/example_3"
   },
   {
     "bg": "#222223",
@@ -19,7 +19,7 @@
       "name": "cb",
       "slides": [1,2,3,4,5,6,7,8,9]
     },
-    "href": "#"
+    "href": "https://pavllovic.github.io/example_2"
   },
   {
     "bg": "#e0e7ef",
@@ -30,6 +30,6 @@
       "name": "lp",
       "slides": [1,2,3,4]
     },
-    "href": "#"
+    "href": "https://pavllovic.github.io/example_1"
   }
 ]

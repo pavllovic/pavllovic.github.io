@@ -12,8 +12,13 @@
 @import '../components/project/project.css';
 @import '../components/carousel/carousel.css';
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 320px;
+  height: 100%;
   background-color: var(--bg-color);
   color: var(--color-text);
   letter-spacing: 0;

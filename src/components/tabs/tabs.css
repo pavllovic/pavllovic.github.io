@@ -7,7 +7,9 @@
 .tabs {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+
+  /* min-height: 100vh; */
+  height: 100%;
   align-items: center;
   justify-content: flex-start;
   background-color: hsl(0, 0%, 8%);
