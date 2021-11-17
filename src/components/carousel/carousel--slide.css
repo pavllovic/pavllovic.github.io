@@ -16,7 +16,8 @@
 }
 
 .carousel--slide img {
-  width: 100%;
+  /* width: 100%; */
+  width: auto;
   height: auto;
   max-height: 100%;
   border-radius: 5px;
@@ -87,7 +88,9 @@
 
   .carousel--slide picture {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   @keyframes from-top {
