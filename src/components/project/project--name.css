@@ -6,12 +6,8 @@
   flex-direction: column;
   align-items: flex-start;
   align-self: center;
-  margin-top: 9rem;
-  margin-bottom: 6rem;
   color: inherit;
   filter: drop-shadow(2px 4px 6px currentColor);
-
-  /* font-size: 40vh; */
   font-size: calc(50vh - 6.5rem);
   font-weight: bold;
   line-height: 1;
