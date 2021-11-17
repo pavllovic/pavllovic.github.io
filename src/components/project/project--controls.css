@@ -1,9 +1,10 @@
 .project--controls {
   position: absolute;
   z-index: 3;
+  top: -10rem;
   right: 2rem;
   display: flex;
-  height: 100%;
+  height: calc(100% + 17rem);
   align-self: flex-end;
   justify-content: flex-end;
 }

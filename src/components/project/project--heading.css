@@ -6,8 +6,6 @@
   align-items: center;
   align-self: center;
   justify-content: center;
-  margin-top: 10rem;
-  margin-bottom: 7rem;
   color: inherit;
   filter: drop-shadow(2px 4px 6px currentColor);
   font-size: min(25vmin, 15rem);
