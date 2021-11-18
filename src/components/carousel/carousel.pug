@@ -34,8 +34,7 @@ mixin carousel(slides, id, href)
       each item, index in slides
         - const x = index + 1;
         div(class='carousel--tab' role='tab' aria-controls=`slide-${id}-${x}` data-tab=`${x}` 
-          aria-selected=`${x === 1 ? 'true' : 'false'}` tabindex=`${x === 1 ? '0' : '-1'}`)
+          aria-selected=`${x === 1 ? 'true' : 'false'}` tabindex=`${x === 1 ? '0' : '-1'}` aria-label=`таб ${x}`)
           picture
             source(srcset=require(`Images/carousel/${id}/${item}-400w.webp`).default type='image/webp')
-            img(src=require(`Images/carousel/${id}/${item}-400w.jpg`).default alt=`сайт` width='80' height='45' loading='lazy'
-            )
+            img(src=require(`Images/carousel/${id}/${item}-400w.jpg`).default alt=`сайт` width='80' height='45' loading='lazy' aria-hidden='true')
