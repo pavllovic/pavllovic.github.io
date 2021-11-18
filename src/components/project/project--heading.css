@@ -18,41 +18,41 @@
   user-select: none;
 }
 
-.project--heading p {
+.project--heading > span {
   display: flex;
   overflow: hidden;
   justify-content: space-between;
 }
 
-.project--heading span {
+.project--heading > span span {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.project--heading p:first-child span {
+.project--heading > span:first-child span {
   animation-name: name-hide;
   transform: translateY(-100%);
 }
 
-.project--heading p:last-child span {
+.project--heading > span:last-child span {
   animation-name: name-hide_revers;
   transform: translateY(100%);
 }
 
-.tabs--panel.is-active .project--heading p:first-child span {
+.tabs--panel.is-active .project--heading > span:first-child span {
   animation-name: name-show;
 }
 
-.tabs--panel.is-active .project--heading p:last-child span {
+.tabs--panel.is-active .project--heading > span:last-child span {
   animation-name: name-show_revers;
 }
 
-.tabs--panel.is-active .project--heading.is-hide p:first-child span {
+.tabs--panel.is-active .project--heading.is-hide > span:first-child span {
   animation-name: name-hide;
 }
 
-.tabs--panel.is-active .project--heading.is-hide p:last-child span {
+.tabs--panel.is-active .project--heading.is-hide > span:last-child span {
   animation-name: name-hide_revers;
 }
 

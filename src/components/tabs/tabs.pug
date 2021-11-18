@@ -27,14 +27,14 @@ section(class='tabs' id='tabs-poject'
         h2(class='project--heading')
           - var arr = item.name.split(' ');
             each string in arr 
-              p
+              span
                 each char in string
                   span #{char}
         +carousel(item.image.slides, item.image.name, item.href) 
         div(class='project--name' aria-hidden='true')
           - var arr = item.name.split(' ');
             each string in arr 
-              p
+              span
                 each char in string
                   span #{char}
   div(class='tabs--count' aria-hidden='true')

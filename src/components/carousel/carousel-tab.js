@@ -22,10 +22,11 @@ CarouselTab.prototype = {
     this.activateSlide(this.slideList.firstElementChild, 1);
     this.projects = document.querySelector('.tabs--tablist');
     this.heading = this.carousel.previousElementSibling;
+    this.carouselId = this.carousel.getAttribute('id');
   },
   changeSlide(tab) {
     const id = tab.getAttribute('data-tab');
-    const slide = this.slideList.querySelector(`#slide-${id}`);
+    const slide = this.slideList.querySelector(`#slide-${this.carouselId}-${id}`);
     this.activateSlide(slide, id);
   },
   activateSlide(slide, id) {

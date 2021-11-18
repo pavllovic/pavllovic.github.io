@@ -18,29 +18,29 @@
   transform: translateX(calc(-50vw + 50%));
 }
 
-.project--name p {
+.project--name > span {
   display: flex;
   overflow: hidden;
 }
 
-.project--name p span {
+.project--name > span span {
   transition-duration: 0.5s, 0.5s;
   transition-property: opacity, transform;
   transition-timing-function: ease, ease;
 }
 
-.carousel + .project--name p:first-child span {
+.carousel + .project--name > span:first-child span {
   opacity: 0;
   transform: translateY(100%);
 }
 
-.carousel + .project--name p:last-child span {
+.carousel + .project--name > span:last-child span {
   opacity: 0;
   transform: translateY(-100%);
 }
 
-.carousel.is-active + .project--name p:first-child span,
-.carousel.is-active + .project--name p:last-child span {
+.carousel.is-active + .project--name > span:first-child span,
+.carousel.is-active + .project--name > span:last-child span {
   opacity: 1;
   transform: translateY(0);
   transition-duration: 1s, 1s;
