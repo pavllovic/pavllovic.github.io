@@ -39,7 +39,6 @@ const htmlWebpackPlagin = new HtmlWebpackPlagin({
   filename: 'index.html',
   template: './src/template/index.pug',
   inject: 'body',
-  // scriptLoading: 'defer',
   chunks: ['index'],
   minify: {
     collapseWhitespace: !isDev,
