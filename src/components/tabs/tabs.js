@@ -39,7 +39,9 @@ Tabs.prototype = {
   },
   changeColors(tab) {
     const color = tab.getAttribute('data-color');
+    const bg = tab.getAttribute('data-bg');
     document.body.style.setProperty('--txt-color', color);
+    document.body.style.setProperty('--bg-color', bg);
   },
   onclickTab(tab) {
     lib.onclickTab.call(this, tab);

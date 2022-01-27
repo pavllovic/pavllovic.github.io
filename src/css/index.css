@@ -23,7 +23,7 @@ body {
   color: var(--txt-color);
   letter-spacing: 0;
   text-align: center;
-  transition-duration: 1s;
-  transition-property: color;
-  transition-timing-function: ease;
+  transition-duration: 1s, 1s;
+  transition-property: color, background-color;
+  transition-timing-function: ease, ease;
 }
