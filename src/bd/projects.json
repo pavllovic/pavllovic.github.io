@@ -2,7 +2,7 @@
   {
     "bg": "#4b3b58",
     "color": "#ffc7c7",
-    "name": "levelup",
+    "name": "level up",
     "stack": ["html", "css", "js", "pug", "webpack"],
     "image": {
       "name": "lu",
