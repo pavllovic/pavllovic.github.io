@@ -3,12 +3,12 @@ mixin carousel(slides, id, href)
   div(class='carousel' id=`${id}` aria-label='слайды проекта' aria-roledescription='carousel')
     div(class='project--controls')
       button(class='btn btn_revers btn-carousel_hide' type='button' aria-pressed='true' data-carousel='btn') 
-        span(class='btn--txt') проджектс
+        span(class='btn--txt') назад
         span(class='btn--icon' aria-hidden='true')
           include ../btn/icon/arrow.svg
           include ../btn/icon/arrow.svg
       button(class='btn btn-carousel_show' type='button' aria-pressed='false' data-carousel='btn') 
-        span(class='btn--txt') дитэйлс
+        span(class='btn--txt') подробнее
         span(class='btn--icon' aria-hidden='true')
           include ../btn/icon/arrow.svg
           include ../btn/icon/arrow.svg 

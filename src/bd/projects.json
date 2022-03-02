@@ -1,14 +1,25 @@
 [
   {
-    "bg": "#4b3b58",
+    "bg": "#e0e7ef",
     "color": "#ffc7c7",
+    "name": "tcoo kery",
+    "stack": ["html", "css", "scss", "js", "pug", "webpack"],
+    "image": {
+      "name": "tc",
+      "slides": [1,2,3,4,5,6]
+    },
+    "href": "https://pavllovic.github.io/tasty-cookery"
+  },
+  {
+    "bg": "#4b3b58",
+    "color": "#ae75e6",
     "name": "level up",
     "stack": ["html", "css", "js", "pug", "webpack"],
     "image": {
       "name": "lu",
       "slides": [1,2,3,4,5]
     },
-    "href": "https://pavllovic.github.io/example_4"
+    "href": "https://pavllovic.github.io/levelup"
   },
   {
     "bg": "#222223",
@@ -19,7 +30,7 @@
       "name": "cb",
       "slides": [1,2,3,4,5,6,7,8,9]
     },
-    "href": "https://pavllovic.github.io/example_2"
+    "href": "https://pavllovic.github.io/coinbase"
   },
   {
     "bg": "#e9f1f4",
@@ -30,17 +41,6 @@
       "name": "lm",
       "slides": [1,2,3,4,5,6,7]
     },
-    "href": "https://pavllovic.github.io/example_3"
-  },
-  {
-    "bg": "#e0e7ef",
-    "color": "#ae75e6",
-    "name": "figma land",
-    "stack": ["html", "css", "js", "pug", "webpack"],
-    "image": {
-      "name": "lp",
-      "slides": [1,2,3,4]
-    },
-    "href": "https://pavllovic.github.io/example_1"
+    "href": "https://pavllovic.github.io/loftmebel"
   }
 ]
