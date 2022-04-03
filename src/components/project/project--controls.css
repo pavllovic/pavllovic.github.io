@@ -33,18 +33,18 @@
 }
 
 .project .btn[aria-pressed='false'],
-.project.is-active .btn[aria-pressed='true'],
-.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] {
+.project.is-show .btn[aria-pressed='true'],
+.project.is-show .btn[aria-pressed='false'] + .btn[data-carousel='link'] {
   transition-delay: 0.5s;
 }
 
-.project.is-active .btn[aria-pressed='true'],
-.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] {
+.project.is-show .btn[aria-pressed='true'],
+.project.is-show .btn[aria-pressed='false'] + .btn[data-carousel='link'] {
   visibility: hidden;
 }
 
-.project.is-active .btn[aria-pressed='false'],
-.project.is-active .btn[aria-pressed='true'] + .btn[data-carousel='link'] {
+.project.is-show .btn[aria-pressed='false'],
+.project.is-show .btn[aria-pressed='true'] + .btn[data-carousel='link'] {
   visibility: visible;
 }
 
@@ -58,28 +58,28 @@
 }
 
 .project .btn-carousel_show[aria-pressed='false'] .btn--txt,
-.project.is-active .btn-carousel_show[aria-pressed='true'] .btn--txt {
+.project.is-show .btn-carousel_show[aria-pressed='true'] .btn--txt {
   opacity: 0;
   transform: translateX(-100%);
 }
 
-.project.is-active .btn-carousel_hide[aria-pressed='true'] .btn--txt {
+.project.is-show .btn-carousel_hide[aria-pressed='true'] .btn--txt {
   opacity: 0;
   transform: translateX(100%);
 }
 
-.project.is-active .btn[aria-pressed='false'] .btn--txt {
+.project.is-show .btn[aria-pressed='false'] .btn--txt {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.5s;
 }
 
-.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] .btn--txt {
+.project.is-show .btn[aria-pressed='false'] + .btn[data-carousel='link'] .btn--txt {
   opacity: 0;
   transform: translateX(100%);
 }
 
-.project.is-active .btn[aria-pressed='true'] + .btn[data-carousel='link'] .btn--txt {
+.project.is-show .btn[aria-pressed='true'] + .btn[data-carousel='link'] .btn--txt {
   opacity: 1;
   transform: translateX(0);
   transition-delay: 0.5s;
@@ -95,20 +95,20 @@
 }
 
 .project .btn-carousel_show[aria-pressed='false'] .btn--txt::before,
-.project.is-active .btn[aria-pressed='true'] .btn--txt::before {
+.project.is-show .btn[aria-pressed='true'] .btn--txt::before {
   transform: scaleX(0);
 }
 
-.project.is-active .btn[aria-pressed='false'] .btn--txt::before {
+.project.is-show .btn[aria-pressed='false'] .btn--txt::before {
   transform: scaleX(1);
   transition-delay: 0.5s;
 }
 
-.project.is-active .btn[aria-pressed='false'] + .btn[data-carousel='link'] .btn--txt::before {
+.project.is-show .btn[aria-pressed='false'] + .btn[data-carousel='link'] .btn--txt::before {
   transform: scaleX(0);
 }
 
-.project.is-active .btn[aria-pressed='true'] + .btn[data-carousel='link'] .btn--txt::before {
+.project.is-show .btn[aria-pressed='true'] + .btn[data-carousel='link'] .btn--txt::before {
   transform: scaleX(1);
   transition-delay: 0.5s;
 }
@@ -127,7 +127,7 @@
   transform: scale(0, 0);
 }
 
-.project.is-active .btn[aria-pressed='false'] .btn--icon {
+.project.is-show .btn[aria-pressed='false'] .btn--icon {
   opacity: 1;
   transform: scale(1, 1);
   transition-delay: 0.5s;

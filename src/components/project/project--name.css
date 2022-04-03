@@ -24,23 +24,27 @@
 }
 
 .project--name > span span {
-  transition-duration: 0.5s, 0.5s;
+  opacity: 0;
   transition-property: opacity, transform;
   transition-timing-function: ease, ease;
 }
 
-.carousel + .project--name > span:first-child span {
+.carousel.is-hide + .project--name > span span {
+  transition-duration: 0.5s, 0.5s;
+}
+
+.carousel.is-hide + .project--name > span:first-child span {
   opacity: 0;
   transform: translateY(100%);
 }
 
-.carousel + .project--name > span:last-child span {
+.carousel.is-hide + .project--name > span:last-child span {
   opacity: 0;
   transform: translateY(-100%);
 }
 
-.carousel.is-active + .project--name > span:first-child span,
-.carousel.is-active + .project--name > span:last-child span {
+.carousel.is-show + .project--name > span:first-child span,
+.carousel.is-show + .project--name > span:last-child span {
   opacity: 1;
   transform: translateY(0);
   transition-duration: 1s, 1s;

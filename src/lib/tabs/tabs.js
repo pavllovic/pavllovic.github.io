@@ -10,7 +10,7 @@ export function init() {
   this.setListeners();
   this.focusTab(this.tablist.firstElementChild);
   this.activateTab(this.tablist.firstElementChild);
-  this.activatePanel(this.panellist.firstElementChild);
+  this.activePanel = this.tabs.querySelector('[data-tabs="panel"]');
 }
 
 export function setListeners() {
@@ -41,12 +41,14 @@ export function activateTab(tab) {
 }
 
 export function deactivatePanel(panel) {
-  panel.classList.remove('is-active');
+  panel.classList.add('is-hide');
+  panel.classList.remove('is-show');
 }
 
 export function activatePanel(panel) {
   if(this.activePanel) this.deactivatePanel(this.activePanel);
-  panel.classList.add('is-active');
+  panel.classList.add('is-show');
+  panel.classList.remove('is-hide');
   this.activePanel = panel;
 }
 

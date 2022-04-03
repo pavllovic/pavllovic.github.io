@@ -4,16 +4,20 @@
   width: 100%;
   padding-top: 57.3%;
   transform: translateX(100%);
-  transition-delay: 0s, 1s;
-  transition-duration: 1s, 0s;
   transition-property: transform, visibility;
   transition-timing-function: ease;
   visibility: hidden;
 }
 
-.carousel.is-active .carousel--slidelist {
+.carousel.is-hide .carousel--slidelist {
+  transition-delay: 0s, 1s;
+  transition-duration: 1s, 0s;
+}
+
+.carousel.is-show .carousel--slidelist {
   transform: translateX(0);
   transition-delay: 0s, 0s;
+  transition-duration: 1s, 0s;
   visibility: visible;
 }
 
@@ -31,7 +35,7 @@
     transform: translateY(100%);
   }
 
-  .carousel.is-active .carousel--slidelist {
+  .carousel.is-show .carousel--slidelist {
     transform: translateY(0);
   }
 }

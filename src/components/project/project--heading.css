@@ -30,29 +30,27 @@
   animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.project--heading > span:first-child span {
-  animation-name: name-hide;
-  transform: translateY(-100%);
-}
-
-.project--heading > span:last-child span {
-  animation-name: name-hide_revers;
-  transform: translateY(100%);
-}
-
-.tabs--panel.is-active .project--heading > span:first-child span {
+.tabs--panel.is-show .project--heading > span:first-child span {
   animation-name: name-show;
 }
 
-.tabs--panel.is-active .project--heading > span:last-child span {
+.tabs--panel.is-show .project--heading > span:last-child span {
   animation-name: name-show_revers;
 }
 
-.tabs--panel.is-active .project--heading.is-hide > span:first-child span {
+.tabs--panel.is-hide .project--heading > span:first-child span {
   animation-name: name-hide;
 }
 
-.tabs--panel.is-active .project--heading.is-hide > span:last-child span {
+.tabs--panel.is-hide .project--heading > span:last-child span {
+  animation-name: name-hide_revers;
+}
+
+.tabs--panel.is-show .project--heading.is-hide > span:first-child span {
+  animation-name: name-hide;
+}
+
+.tabs--panel.is-show .project--heading.is-hide > span:last-child span {
   animation-name: name-hide_revers;
 }
 

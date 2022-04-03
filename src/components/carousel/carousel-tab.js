@@ -23,6 +23,7 @@ CarouselTab.prototype = {
     this.projects = document.querySelector('.tabs--tablist');
     this.heading = this.carousel.previousElementSibling;
     this.carouselId = this.carousel.getAttribute('id');
+    this.state = false;
   },
   changeSlide(tab) {
     const id = tab.getAttribute('data-tab');
@@ -66,10 +67,19 @@ CarouselTab.prototype = {
   },
   toggleStateCarousel(btn) {
     this.slideList.removeAttribute('style');
-    this.carousel.classList.toggle('is-active');
+    this.state ? this.hideCarousel() : this.showCarousel();
     this.projects.classList.toggle('is-hide');
     this.heading.classList.toggle('is-hide');
     this.toggleStateBtn(btn);
+    this.state = !this.state;
+  },
+  hideCarousel() {
+    this.carousel.classList.add('is-hide');
+    this.carousel.classList.remove('is-show');
+  },
+  showCarousel() {
+    this.carousel.classList.add('is-show');
+    this.carousel.classList.remove('is-hide');
   },
   toggleStateBtn(btn) {
     const ctrl = this.carousel.querySelector('[aria-pressed="true"][data-carousel="btn"]');

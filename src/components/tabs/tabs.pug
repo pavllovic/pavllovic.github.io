@@ -22,7 +22,7 @@ section(class='tabs' id='tabs-poject'
   div(class='tabs--panellist' id='tabs-poject--panellist' data-tabs='panellist')
     each item, index in projects
       - const x = index + 1;
-      div(class=`tabs--panel project ${x === 1 ? 'is-active' : ''}` role='tabpanel' data-tabs='panel' id=`panel-${x}` aria-label=`${item.name}` 
+      div(class=`tabs--panel project ${x === 1 ? 'is-show' : ''}` role='tabpanel' data-tabs='panel' id=`panel-${x}` aria-label=`${item.name}` 
         style=`--bg-color:${item.bg}`)
         h2(class='project--heading')
           - var arr = item.name.split(' ');

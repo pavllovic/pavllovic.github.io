@@ -7,8 +7,6 @@
   scrollbar-color: currentColor transparent;
   scrollbar-width: thin;
   transform: translateX(calc(100% + 2rem));
-  transition-delay: 0s, 1s;
-  transition-duration: 1s, 0s;
   transition-property: transform, visibility;
   transition-timing-function: ease;
   visibility: hidden;
@@ -26,6 +24,18 @@
 
 .carousel--tablist::-webkit-scrollbar-thumb {
   background-color: currentColor;
+}
+
+.carousel.is-hide .carousel--tablist {
+  transition-delay: 0s, 1s;
+  transition-duration: 1s, 0s;
+}
+
+.carousel.is-show .carousel--tablist {
+  transform: translateX(0);
+  transition-delay: 0s, 0s;
+  transition-duration: 1s, 0s;
+  visibility: visible;
 }
 
 @media (min-width: 800px), (orientation: landscape) {
@@ -50,10 +60,4 @@
     margin: 1rem 0;
     background-color: transparent;
   }
-}
-
-.carousel.is-active .carousel--tablist {
-  transform: translateX(0);
-  transition-delay: 0s, 0s;
-  visibility: visible;
 }

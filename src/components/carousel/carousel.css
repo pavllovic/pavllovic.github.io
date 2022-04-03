@@ -13,6 +13,10 @@
   justify-content: center;
 }
 
-.carousel.is-active {
+.carousel.is-hide {
+  z-index: initial;
+}
+
+.carousel.is-show {
   z-index: 3;
 }
